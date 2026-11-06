@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-/// Centralized registry for all icons used dynamically (in Firestore, Categories, Activity Logs).
+/// Centralized registry for all icons used dynamically (in Supabase, Categories, Activity Logs).
 /// All icons are compile-time constants so Flutter's icon font tree shaker works flawlessly for release & web builds.
 class AppIconHelper {
   static const List<IconData> _registeredIcons = [

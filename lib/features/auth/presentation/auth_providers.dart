@@ -49,7 +49,7 @@ class AuthNotifier extends StateNotifier<AuthState> {
       isInitialized: true,
     );
 
-    // Auto-logout all devices when PIN changes in Firestore
+    // Auto-logout all devices when PIN changes remotely in Supabase
     _pinSub = _repository.onPinChanged.listen((_) {
       logout();
     });
